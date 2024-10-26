@@ -1,9 +1,10 @@
 res://default_env.tres
+res://map.tscn
+res://README.md
 res://Scenes/Menu.tscn
 res://Scenes/Game.tscn
 res://Scenes/Global.tscn
 res://Scenes/Conductor.tscn
 res://Scenes/End.tscn
 res://Scenes/Note.tscn
-res://map.tscn
 res://Scenes/ArrowButton.tscn
