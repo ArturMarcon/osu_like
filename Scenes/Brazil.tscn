@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://cx1boem71oo4j"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_8d3uj"]
+[ext_resource type="Texture2D" uid="uid://b3i5c6cllt3a5" path="res://Sprites/RioDeJaneiro.jpg" id="2_mmv8e"]
+[ext_resource type="PackedScene" uid="uid://dhlvfq4ysni50" path="res://Scenes/ArrowButton.tscn" id="3_bme73"]
+[ext_resource type="SpriteFrames" uid="uid://c3stkaf1xuvv6" path="res://Frames/arrow_left_frames.tres" id="4_xrr2r"]
+[ext_resource type="SpriteFrames" uid="uid://cwegoexqgd483" path="res://Frames/arrow_right_frames.tres" id="5_8ounb"]
+[ext_resource type="SpriteFrames" uid="uid://bpp5uxa3go0pc" path="res://Frames/shaman.tres" id="6_unciq"]
+[ext_resource type="Script" path="res://Scripts/ShamanMovement.gd" id="7_wd21h"]
+[ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="8_bld40"]
+[ext_resource type="PackedScene" uid="uid://do35gpu5lx5fs" path="res://Scenes/Conductor.tscn" id="9_sdvan"]
+[ext_resource type="AudioStream" uid="uid://doyuj26bprpli" path="res://Sounds/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg" id="10_bdeit"]
+[ext_resource type="Texture2D" uid="uid://cn0r342adn2ix" path="res://Sprites/Viking.png" id="11_rarl0"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_8d3uj")
+
+[node name="RioDeJaneiro" type="Sprite2D" parent="."]
+modulate = Color(0.921671, 0.609063, 0.732152, 1)
+position = Vector2(152, 94)
+scale = Vector2(0.3745, 0.319715)
+texture = ExtResource("2_mmv8e")
+
+[node name="ArrowUp" parent="." instance=ExtResource("3_bme73")]
+modulate = Color(0, 0.627451, 0.631373, 1)
+position = Vector2(160, 164)
+input = "up"
+
+[node name="ArrowLeft" parent="." instance=ExtResource("3_bme73")]
+modulate = Color(0, 0.628369, 0.632215, 1)
+position = Vector2(120, 164)
+sprite_frames = ExtResource("4_xrr2r")
+input = "left"
+
+[node name="ArrowButton" parent="." instance=ExtResource("3_bme73")]
+modulate = Color(0, 0.627451, 0.631373, 1)
+position = Vector2(200, 164)
+sprite_frames = ExtResource("5_8ounb")
+input = "right"
+
+[node name="Shaman" parent="." instance=ExtResource("3_bme73")]
+position = Vector2(61, 125)
+scale = Vector2(0.12, 0.12)
+sprite_frames = ExtResource("6_unciq")
+script = ExtResource("7_wd21h")
+input = "up"
+input2 = "left"
+input3 = "right"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("8_bld40")
+text = "0"
+
+[node name="Combo" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 20.0
+offset_right = 96.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("8_bld40")
+horizontal_alignment = 1
+
+[node name="Conductor" parent="." instance=ExtResource("9_sdvan")]
+stream = ExtResource("10_bdeit")
+volume_db = -15.0
+bpm = 115
+
+[node name="Viking" type="Sprite2D" parent="."]
+position = Vector2(277, 130)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("11_rarl0")

@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730000068
-default_env.tres::Environment::1907542984123466508::1730000068::0::1::::<><>::
+::res://::1730013800
+default_env.tres::Environment::1907542984123466508::1730013800::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1729972468::0::1::::<><>::
 icon.png::CompressedTexture2D::2541245641906991129::1729972468::1729972598::1::::<><>::
 map.tscn::PackedScene::5541923477303491002::1729980657::0::1::::<><>::res://Scripts/Menu.gd<>uid://b16twfa4msdr4::::res://Sprites/ui/play_button/play1.png<>uid://dos0n7mctrt5s::::res://Sprites/ui/play_button/play2.png<>uid://fhp1a641gje1::::res://Sprites/ui/slider_arrow1.png<>uid://cl0cg0xmwg2el::::res://Sprites/ui/slider_arrow2.png<>uid://cn3lhk44ygqan::::res://Sprites/ui/slider.png<>uid://1q2iq6bpjaui::::res://Sprites/ui/slider_content.png<>res://Fonts/heartbit2x.tres<>uid://b1nqae3bd6qbt::::res://Sprites/ui/test_button/test_button1.png<>uid://o6f6py8d8375::::res://Sprites/ui/test_button/test_button2.png<>uid://d1hw0eo4djl2t::::res://Sounds/bell_ding.ogg
@@ -16,8 +16,8 @@ HeartbitXX2Px.ttf::FontFile::4387822368734157953::1729972468::1729972598::1::::<
 HeartbitXX.ttf::FontFile::3142429259179141113::1729972468::1729972598::1::::<><>::
 ManaFont.tres::FontFile::-1::1729972581::0::1::::<><>::res://Fonts/manaspc.ttf
 manaspc.ttf::FontFile::2038942153866451464::1729972468::1729972598::1::::<><>::
-::res://Frames/::1729999733
-arrow_left_frames.tres::SpriteFrames::6776459278562686541::1729985412::0::1::::<><>::uid://b7ibqmnta1x20::::res://Sprites/game/arrow_button/left/arrow_button_left1.png<>uid://chyjg7ucf3000::::res://Sprites/game/arrow_button/left/arrow_button_left2.png
+::res://Frames/::1730000290
+arrow_left_frames.tres::SpriteFrames::6776459278562686541::1730000290::0::1::::<><>::uid://b7ibqmnta1x20::::res://Sprites/game/arrow_button/left/arrow_button_left1.png<>uid://chyjg7ucf3000::::res://Sprites/game/arrow_button/left/arrow_button_left2.png
 arrow_right_frames.tres::SpriteFrames::6325642987869460522::1729998181::0::1::::<><>::uid://igk4347xuy1b::::res://Sprites/game/arrow_button/right/arrow_button_right1.png<>uid://cy816qde6jrr2::::res://Sprites/game/arrow_button/right/arrow_button_right2.png
 arrow_up_frames.tres::SpriteFrames::3815629158125699972::1729985669::0::1::::<><>::uid://wnalqgixhaq6::::res://Sprites/game/arrow_button/up/arrow_button_up2.png<>uid://c5wupptsosn8e::::res://Sprites/game/arrow_button/up/arrow_button_up1.png
 note_frames.tres::SpriteFrames::3189298339593836194::1729998025::0::1::::<><>::uid://c5gvy3kadvg77::::res://Sprites/game/arrow_button/up/arrow_button_up3.png<>uid://coxneqialvh81::::res://Sprites/game/arrow_button/right/arrow_button_right3.png<>uid://cearrj2bnj580::::res://Sprites/game/arrow_button/left/arrow_button_left3.png
@@ -28,31 +28,38 @@ Camera2D.gd::GDScript::-1::1729972581::0::1::::<>Camera2D<>::
 Camera2D.tscn::PackedScene::-1::1729972581::0::1::::<><>::res://Plugins/Camera2D/Camera2D.gd
 ::res://Plugins/Scripts/::1729978875
 SimpleTopDownMovement.gd::GDScript::-1::1729972581::0::1::::<>CharacterBody2D<>::
-::res://Scenes/::1730000068
-ArrowButton.tscn::PackedScene::7674576983945763453::1730000068::0::1::::<><>::uid://bumk4cdv20fma::::res://Frames/arrow_up_frames.tres<>res://Scripts/ArrowButton.gd
-Conductor.tscn::PackedScene::8201541483796895324::1730000068::0::1::::<><>::res://Scripts/Conductor.gd<>uid://boahware7oal2::::res://Sounds/song.ogg
-End.tscn::PackedScene::3694159950874341026::1730000068::0::1::::<><>::uid://bf81v6enwkv40::::res://Sprites/ui/play_again_button/play_again1.png<>uid://5xq0few3ibw1::::res://Sprites/ui/back_to_menu_button/back_to_menu2.png<>uid://dp6nlkanrnulc::::res://Sprites/ui/back_to_menu_button/back_to_menu1.png<>uid://c0tbpqxi5tnqv::::res://Sprites/ui/play_again_button/play_again2.png<>res://Fonts/heartbit2x.tres<>res://Scripts/End.gd
-Game.tscn::PackedScene::7380020417736869507::1730000068::0::1::::<><>::uid://dhlvfq4ysni50::::res://Scenes/ArrowButton.tscn<>uid://c3stkaf1xuvv6::::res://Frames/arrow_left_frames.tres<>uid://cwegoexqgd483::::res://Frames/arrow_right_frames.tres<>uid://ch80u3p8nvw5m::::res://Sprites/game/road/road.png<>res://Scripts/Game.gd<>uid://bpp5uxa3go0pc::::res://Frames/shaman.tres<>res://Fonts/heartbit2x.tres<>res://Scripts/ShamanMovement.gd<>uid://do35gpu5lx5fs::::res://Scenes/Conductor.tscn<>uid://b6m8th7ja4l7a::::res://Sounds/Skyrim 8-bit Chiptune Medley [Part 1 of 2] [TubeRipper.cc].ogg<>uid://cn0r342adn2ix::::res://Sprites/Viking.png
-Global.tscn::PackedScene::6736312665020365688::1730000068::0::1::::<><>::res://Scripts/Global.gd
-Menu.tscn::PackedScene::575797156430585435::1730000068::0::1::::<><>::res://Scripts/Menu.gd<>uid://eid2dsjug1p::::res://Sprites/map.png<>uid://bjwfhtv5wx2pp::::res://Sprites/Screenshot_1 (2).png<>res://Fonts/heartbit2x.tres<>uid://cn3lhk44ygqan::::res://Sprites/ui/slider.png<>uid://1q2iq6bpjaui::::res://Sprites/ui/slider_content.png<>uid://cl0cg0xmwg2el::::res://Sprites/ui/slider_arrow2.png<>uid://fhp1a641gje1::::res://Sprites/ui/slider_arrow1.png<>uid://b1nqae3bd6qbt::::res://Sprites/ui/test_button/test_button1.png<>uid://o6f6py8d8375::::res://Sprites/ui/test_button/test_button2.png<>uid://d1hw0eo4djl2t::::res://Sounds/bell_ding.ogg
-Note.tscn::PackedScene::4189102325792937898::1730000068::0::1::::<><>::uid://blo6jpamg4cgg::::res://Frames/note_frames.tres<>uid://2637ko1313hd::::res://Sprites/game/particles/star.png<>res://Fonts/heartbit2x.tres<>res://Scripts/Note.gd
-::res://Scripts/::1729999173
+::res://Scenes/::1730013800
+ArrowButton.tscn::PackedScene::7674576983945763453::1730013800::0::1::::<><>::uid://bumk4cdv20fma::::res://Frames/arrow_up_frames.tres<>res://Scripts/ArrowButton.gd
+Brazil.tscn::PackedScene::6440944540894235435::1730013800::0::1::::<><>::res://Scripts/Game.gd<>uid://b2gqjclir8ifs::::res://Sprites/Imagem do WhatsApp de 2024-10-27 à(s) 00.35.13_bdbc3d38.jpg<>uid://dhlvfq4ysni50::::res://Scenes/ArrowButton.tscn<>uid://c3stkaf1xuvv6::::res://Frames/arrow_left_frames.tres<>uid://cwegoexqgd483::::res://Frames/arrow_right_frames.tres<>uid://bpp5uxa3go0pc::::res://Frames/shaman.tres<>res://Scripts/ShamanMovement.gd<>res://Fonts/heartbit2x.tres<>uid://do35gpu5lx5fs::::res://Scenes/Conductor.tscn<>uid://doyuj26bprpli::::res://Sounds/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg<>uid://cn0r342adn2ix::::res://Sprites/Viking.png
+Conductor.tscn::PackedScene::8201541483796895324::1730011959::0::1::::<><>::res://Scripts/Conductor.gd<>uid://boahware7oal2::::res://Sounds/song.ogg
+End.tscn::PackedScene::3694159950874341026::1730013800::0::1::::<><>::uid://bf81v6enwkv40::::res://Sprites/ui/play_again_button/play_again1.png<>uid://5xq0few3ibw1::::res://Sprites/ui/back_to_menu_button/back_to_menu2.png<>uid://dp6nlkanrnulc::::res://Sprites/ui/back_to_menu_button/back_to_menu1.png<>uid://c0tbpqxi5tnqv::::res://Sprites/ui/play_again_button/play_again2.png<>res://Fonts/heartbit2x.tres<>res://Scripts/End.gd
+Game.tscn::PackedScene::7380020417736869507::1730013800::0::1::::<><>::uid://dhlvfq4ysni50::::res://Scenes/ArrowButton.tscn<>uid://c3stkaf1xuvv6::::res://Frames/arrow_left_frames.tres<>uid://b2gqjclir8ifs::::res://Sprites/Imagem do WhatsApp de 2024-10-27 à(s) 00.35.13_bdbc3d38.jpg<>uid://cwegoexqgd483::::res://Frames/arrow_right_frames.tres<>res://Scripts/Game.gd<>uid://bpp5uxa3go0pc::::res://Frames/shaman.tres<>res://Fonts/heartbit2x.tres<>res://Scripts/ShamanMovement.gd<>uid://do35gpu5lx5fs::::res://Scenes/Conductor.tscn<>uid://b6m8th7ja4l7a::::res://Sounds/Skyrim 8-bit Chiptune Medley [Part 1 of 2] [TubeRipper.cc].ogg<>uid://cn0r342adn2ix::::res://Sprites/Viking.png
+Global.tscn::PackedScene::6736312665020365688::1730013800::0::1::::<><>::res://Scripts/Global.gd
+Menu.tscn::PackedScene::575797156430585435::1730013800::0::1::::<><>::res://Scripts/Menu.gd<>uid://eid2dsjug1p::::res://Sprites/map.png<>uid://bjwfhtv5wx2pp::::res://Sprites/Screenshot_1 (2).png<>res://Fonts/heartbit2x.tres<>uid://deykstn2oy8pd::::res://Sprites/Brazilflag_with_bgc.png<>uid://cn3lhk44ygqan::::res://Sprites/ui/slider.png<>uid://1q2iq6bpjaui::::res://Sprites/ui/slider_content.png<>uid://cl0cg0xmwg2el::::res://Sprites/ui/slider_arrow2.png<>uid://fhp1a641gje1::::res://Sprites/ui/slider_arrow1.png<>uid://b1nqae3bd6qbt::::res://Sprites/ui/test_button/test_button1.png<>uid://o6f6py8d8375::::res://Sprites/ui/test_button/test_button2.png<>uid://d1hw0eo4djl2t::::res://Sounds/bell_ding.ogg
+Note.tscn::PackedScene::4189102325792937898::1730012807::0::1::::<><>::uid://blo6jpamg4cgg::::res://Frames/note_frames.tres<>uid://2637ko1313hd::::res://Sprites/game/particles/star.png<>res://Fonts/heartbit2x.tres<>res://Scripts/Note.gd
+BrazilNote.tscn::PackedScene::9125260519234013644::1730013800::0::1::::<><>::res://Scripts/Note.gd<>uid://blo6jpamg4cgg::::res://Frames/note_frames.tres<>uid://2637ko1313hd::::res://Sprites/game/particles/star.png<>res://Fonts/heartbit2x.tres
+::res://Scripts/::1730012799
 ArrowButton.gd::GDScript::-1::1729998721::0::1::::<>AnimatedSprite2D<>::
 Conductor.gd::GDScript::-1::1729973735::0::1::::<>AudioStreamPlayer<>::
 End.gd::GDScript::-1::1729972581::0::1::::<>Node2D<>::
 Game.gd::GDScript::-1::1729997210::0::1::::<>Node2D<>::
 Global.gd::GDScript::-1::1729972664::0::1::::<>Node2D<>::
-Menu.gd::GDScript::-1::1729972581::0::1::::<>Node2D<>::
+Menu.gd::GDScript::-1::1730012799::0::1::::<>Node2D<>::
 Note.gd::GDScript::-1::1729976866::0::1::::<>Area2D<>::
 ShamanMovement.gd::GDScript::-1::1729999173::0::1::::<>AnimatedSprite2D<>::
-::res://Sounds/::1729993966
+::res://Sounds/::1730013433
 bell_ding.ogg::AudioStreamOggVorbis::9000003281677714285::1729972468::1729974091::1::::<><>::
+Imagem do WhatsApp de 2024-10-27 à(s) 04.16.32_ea939589.jpg::CompressedTexture2D::2598172123640981963::1730013433::1730013433::1::::<><>::
 Skyrim 8-bit Chiptune Medley [Part 1 of 2] [TubeRipper.cc].ogg::AudioStreamOggVorbis::4589085377873573364::1729993963::1729993966::1::::<><>::
 song1.ogg::AudioStreamOggVorbis::325541429932216868::1729972468::1729974903::1::::<><>::
 song.ogg::AudioStreamOggVorbis::3369528827527557569::1729974890::1729975443::1::::<><>::
-::res://Sprites/::1730000137
+Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg::AudioStreamOggVorbis::8192682806195221650::1730013301::1730013312::1::::<><>::
+::res://Sprites/::1730013900
+Brazilflag.jpg::CompressedTexture2D::8627589864815032808::1730013463::1730013463::1::::<><>::
+Brazilflag_with_bgc.png::CompressedTexture2D::7490202825219377349::1730013755::1730013748::1::::<><>::
 Imagem do WhatsApp de 2024-10-27 à(s) 00.35.13_bdbc3d38.jpg::CompressedTexture2D::4294893394900798004::1730000137::1730000137::1::::<><>::
 map.png::CompressedTexture2D::8750027935611211::1729982112::1729982119::1::::<><>::
+RioDeJaneiro.jpg::CompressedTexture2D::4370050040790021558::1730013900::1730013900::1::::<><>::
 Screenshot_1 (2).png::CompressedTexture2D::3063853704323817489::1729982112::1729982119::1::::<><>::
 shaman.png::CompressedTexture2D::1128051480479916605::1729982858::1729982858::1::::<><>::
 ShamanHighCut.png::CompressedTexture2D::236240981122173602::1729997923::1729997923::1::::<><>::

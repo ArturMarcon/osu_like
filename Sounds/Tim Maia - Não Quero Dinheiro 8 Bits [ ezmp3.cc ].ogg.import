@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://doyuj26bprpli"
+path="res://.godot/imported/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg-b4a6a9b4a20a92e8aefa01ab95ea4a07.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg"
+dest_files=["res://.godot/imported/Tim Maia - Não Quero Dinheiro 8 Bits [ ezmp3.cc ].ogg-b4a6a9b4a20a92e8aefa01ab95ea4a07.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
