@@ -1,0 +1,75 @@
+[gd_scene load_steps=12 format=3 uid="uid://h4ipnuhmuwb3"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_vgifx"]
+[ext_resource type="Texture2D" uid="uid://bw1i2q70nyfck" path="res://Sprites/JapanBackground (2).jpg" id="2_iof0l"]
+[ext_resource type="PackedScene" uid="uid://dhlvfq4ysni50" path="res://Scenes/ArrowButton.tscn" id="3_w1yhf"]
+[ext_resource type="SpriteFrames" uid="uid://c3stkaf1xuvv6" path="res://Frames/arrow_left_frames.tres" id="4_5qlqw"]
+[ext_resource type="SpriteFrames" uid="uid://cwegoexqgd483" path="res://Frames/arrow_right_frames.tres" id="5_bry0p"]
+[ext_resource type="SpriteFrames" uid="uid://bpp5uxa3go0pc" path="res://Frames/shaman.tres" id="6_7o3o8"]
+[ext_resource type="Script" path="res://Scripts/ShamanMovement.gd" id="7_3sp8m"]
+[ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="8_t0v8y"]
+[ext_resource type="PackedScene" uid="uid://do35gpu5lx5fs" path="res://Scenes/Conductor.tscn" id="9_gdgrm"]
+[ext_resource type="AudioStream" uid="uid://c5qp84b142vcw" path="res://Sounds/Dragon-Ball-Z-Opening-8-bit-_-ezmp3.cc-_.ogg" id="10_1naf0"]
+[ext_resource type="Texture2D" uid="uid://cn0r342adn2ix" path="res://Sprites/Viking.png" id="11_7m22j"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_vgifx")
+
+[node name="JapanBackground(2)" type="Sprite2D" parent="."]
+position = Vector2(169.5, 100)
+scale = Vector2(0.177604, 0.187037)
+texture = ExtResource("2_iof0l")
+
+[node name="ArrowUp" parent="." instance=ExtResource("3_w1yhf")]
+modulate = Color(0.8, 0.439216, 0.203922, 1)
+position = Vector2(160, 164)
+input = "up"
+
+[node name="ArrowLeft" parent="." instance=ExtResource("3_w1yhf")]
+modulate = Color(0.8, 0.439216, 0.203922, 1)
+position = Vector2(120, 164)
+sprite_frames = ExtResource("4_5qlqw")
+input = "left"
+
+[node name="ArrowButton" parent="." instance=ExtResource("3_w1yhf")]
+modulate = Color(0.800366, 0.439622, 0.204783, 1)
+position = Vector2(200, 164)
+sprite_frames = ExtResource("5_bry0p")
+input = "right"
+
+[node name="Shaman" parent="." instance=ExtResource("3_w1yhf")]
+position = Vector2(61, 125)
+scale = Vector2(0.12, 0.12)
+sprite_frames = ExtResource("6_7o3o8")
+script = ExtResource("7_3sp8m")
+input = "up"
+input2 = "left"
+input3 = "right"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("8_t0v8y")
+text = "0"
+
+[node name="Combo" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 20.0
+offset_right = 96.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("8_t0v8y")
+horizontal_alignment = 1
+
+[node name="Conductor" parent="." instance=ExtResource("9_gdgrm")]
+stream = ExtResource("10_1naf0")
+volume_db = -15.0
+bpm = 115
+
+[node name="Viking" type="Sprite2D" parent="."]
+position = Vector2(277, 130)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("11_7m22j")

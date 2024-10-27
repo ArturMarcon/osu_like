@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ig6kbcko36c2"]
+[gd_scene load_steps=16 format=3 uid="uid://ig6kbcko36c2"]
 
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://eid2dsjug1p" path="res://Sprites/map.png" id="2_t4phs"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="4"]
 [ext_resource type="Texture2D" uid="uid://deykstn2oy8pd" path="res://Sprites/Brazilflag_with_bgc.png" id="4_kteyp"]
 [ext_resource type="Texture2D" uid="uid://cn3lhk44ygqan" path="res://Sprites/ui/slider.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://qm85dwee4la8" path="res://Sprites/Japan.png" id="5_orkxe"]
 [ext_resource type="Texture2D" uid="uid://1q2iq6bpjaui" path="res://Sprites/ui/slider_content.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://cl0cg0xmwg2el" path="res://Sprites/ui/slider_arrow2.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://fhp1a641gje1" path="res://Sprites/ui/slider_arrow1.png" id="8"]
@@ -48,6 +49,16 @@ rotation = 0.0017704
 texture_normal = ExtResource("4_kteyp")
 texture_pressed = ExtResource("4_kteyp")
 texture_hover = ExtResource("4_kteyp")
+
+[node name="Japan" type="TextureButton" parent="."]
+offset_left = 291.0
+offset_top = 66.0
+offset_right = 308.0
+offset_bottom = 75.0
+rotation = 0.0017704
+texture_normal = ExtResource("5_orkxe")
+texture_pressed = ExtResource("5_orkxe")
+texture_hover = ExtResource("5_orkxe")
 
 [node name="HSlider" type="HSlider" parent="."]
 offset_left = 51.0
@@ -100,5 +111,6 @@ stream = ExtResource("11")
 
 [connection signal="button_down" from="Start_Button" to="." method="_on_Start_Button_button_down"]
 [connection signal="button_down" from="Brazil" to="." method="_on_brazil_button_down"]
+[connection signal="button_down" from="Japan" to="." method="_on_japan_button_down"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

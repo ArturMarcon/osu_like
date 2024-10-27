@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdatrrwro2n3h"
-path="res://.godot/imported/Imagem do WhatsApp de 2024-10-27 à(s) 04.16.32_ea939589.jpg-8a615498878087e8e6cea0f5ed6710c4.ctex"
+uid="uid://qm85dwee4la8"
+path="res://.godot/imported/Japan.png-8e855ae746e3955d0e80d8bc8641d75c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sounds/Imagem do WhatsApp de 2024-10-27 à(s) 04.16.32_ea939589.jpg"
-dest_files=["res://.godot/imported/Imagem do WhatsApp de 2024-10-27 à(s) 04.16.32_ea939589.jpg-8a615498878087e8e6cea0f5ed6710c4.ctex"]
+source_file="res://Sprites/Japan.png"
+dest_files=["res://.godot/imported/Japan.png-8e855ae746e3955d0e80d8bc8641d75c.ctex"]
 
 [params]
 
