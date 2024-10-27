@@ -1,34 +1,50 @@
-[gd_scene load_steps=8 format=3 uid="uid://dde64f5vj44hj"]
+[gd_scene load_steps=12 format=3 uid="uid://dde64f5vj44hj"]
 
 [ext_resource type="PackedScene" uid="uid://dhlvfq4ysni50" path="res://Scenes/ArrowButton.tscn" id="1"]
-[ext_resource type="SpriteFrames" path="res://Frames/arrow_left_frames.tres" id="2"]
-[ext_resource type="SpriteFrames" path="res://Frames/arrow_right_frames.tres" id="3"]
-[ext_resource type="Texture2D" uid="uid://ch80u3p8nvw5m" path="res://Sprites/game/road/road.png" id="4"]
+[ext_resource type="SpriteFrames" uid="uid://c3stkaf1xuvv6" path="res://Frames/arrow_left_frames.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://b2gqjclir8ifs" path="res://Sprites/Imagem do WhatsApp de 2024-10-27 à(s) 00.35.13_bdbc3d38.jpg" id="2_lxkm7"]
+[ext_resource type="SpriteFrames" uid="uid://cwegoexqgd483" path="res://Frames/arrow_right_frames.tres" id="3"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="6"]
+[ext_resource type="SpriteFrames" uid="uid://bpp5uxa3go0pc" path="res://Frames/shaman.tres" id="6_rvko7"]
 [ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="7"]
+[ext_resource type="Script" path="res://Scripts/ShamanMovement.gd" id="7_abt63"]
 [ext_resource type="PackedScene" uid="uid://do35gpu5lx5fs" path="res://Scenes/Conductor.tscn" id="8"]
+[ext_resource type="AudioStream" uid="uid://b6m8th7ja4l7a" path="res://Sounds/Skyrim 8-bit Chiptune Medley [Part 1 of 2] [TubeRipper.cc].ogg" id="9_t6sk4"]
+[ext_resource type="Texture2D" uid="uid://cn0r342adn2ix" path="res://Sprites/Viking.png" id="12_h0pyc"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("6")
 
-[node name="road" type="Sprite2D" parent="."]
-position = Vector2(100, 0)
-texture = ExtResource("4")
-centered = false
+[node name="ImagemDoWhatsAppDe2024-10-27À(s)00_35_13Bdbc3d38" type="Sprite2D" parent="."]
+position = Vector2(170.5, 100)
+scale = Vector2(0.5456, 0.317308)
+texture = ExtResource("2_lxkm7")
 
 [node name="ArrowUp" parent="." instance=ExtResource("1")]
+modulate = Color(0, 0.627451, 0.631373, 1)
 position = Vector2(160, 164)
 input = "up"
 
 [node name="ArrowLeft" parent="." instance=ExtResource("1")]
+modulate = Color(0, 0.628369, 0.632215, 1)
 position = Vector2(120, 164)
 sprite_frames = ExtResource("2")
 input = "left"
 
 [node name="ArrowButton" parent="." instance=ExtResource("1")]
+modulate = Color(0, 0.627451, 0.631373, 1)
 position = Vector2(200, 164)
 sprite_frames = ExtResource("3")
 input = "right"
+
+[node name="Shaman" parent="." instance=ExtResource("1")]
+position = Vector2(49, 124)
+scale = Vector2(0.12, 0.12)
+sprite_frames = ExtResource("6_rvko7")
+script = ExtResource("7_abt63")
+input = "up"
+input2 = "left"
+input3 = "right"
 
 [node name="Label" type="Label" parent="."]
 offset_left = 4.0
@@ -49,5 +65,11 @@ theme_override_fonts/font = ExtResource("7")
 horizontal_alignment = 1
 
 [node name="Conductor" parent="." instance=ExtResource("8")]
+stream = ExtResource("9_t6sk4")
 volume_db = -15.0
 bpm = 115
+
+[node name="Viking" type="Sprite2D" parent="."]
+position = Vector2(265, 52)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("12_h0pyc")

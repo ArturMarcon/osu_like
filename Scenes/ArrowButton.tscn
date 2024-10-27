@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dhlvfq4ysni50"]
 
-[ext_resource type="SpriteFrames" path="res://Frames/arrow_up_frames.tres" id="1"]
+[ext_resource type="SpriteFrames" uid="uid://bumk4cdv20fma" path="res://Frames/arrow_up_frames.tres" id="1"]
 [ext_resource type="Script" path="res://Scripts/ArrowButton.gd" id="2"]
 
 [sub_resource type="RectangleShape2D" id="1"]
