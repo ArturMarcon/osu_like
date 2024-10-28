@@ -1,34 +1,47 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsvqjlrr5y2yg"]
+[gd_scene load_steps=8 format=3 uid="uid://bsvqjlrr5y2yg"]
 
-[ext_resource type="Texture2D" uid="uid://bf81v6enwkv40" path="res://Sprites/ui/play_again_button/play_again1.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://5xq0few3ibw1" path="res://Sprites/ui/back_to_menu_button/back_to_menu2.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://sfaamcqjcqpp" path="res://Imagem do WhatsApp de 2024-10-28 à(s) 02.43.15_6c7bac06.jpg" id="2_o5fe5"]
 [ext_resource type="Texture2D" uid="uid://dp6nlkanrnulc" path="res://Sprites/ui/back_to_menu_button/back_to_menu1.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://c0tbpqxi5tnqv" path="res://Sprites/ui/play_again_button/play_again2.png" id="4"]
 [ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="5"]
 [ext_resource type="Script" path="res://Scripts/End.gd" id="6"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hup1l"]
+load_path = "res://.godot/imported/play_again1.png-edc704740704d7ea3144d14d0fb16ca2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lysoy"]
+load_path = "res://.godot/imported/play_again2.png-c3d1766080fd6bc13e4908eaf067510f.ctex"
 
 [node name="End" type="Node2D"]
 script = ExtResource("6")
 
+[node name="ImagemDoWhatsAppDe2024-10-28À(s)02_43_156c7Bac06" type="Sprite2D" parent="."]
+position = Vector2(170, 112.5)
+scale = Vector2(0.531685, 0.531322)
+texture = ExtResource("2_o5fe5")
+
 [node name="PlayAgain" type="TextureButton" parent="."]
+modulate = Color(0, 0.901961, 0, 1)
 offset_left = 48.0
 offset_top = 128.0
 offset_right = 144.0
-offset_bottom = 168.0
-texture_normal = ExtResource("1")
-texture_pressed = ExtResource("1")
-texture_hover = ExtResource("4")
+offset_bottom = 160.0
+texture_normal = SubResource("CompressedTexture2D_hup1l")
+texture_pressed = SubResource("CompressedTexture2D_hup1l")
+texture_hover = SubResource("CompressedTexture2D_lysoy")
 
 [node name="BackToMenu" type="TextureButton" parent="."]
+modulate = Color(0, 0.901961, 0, 1)
 offset_left = 176.0
 offset_top = 128.0
 offset_right = 272.0
-offset_bottom = 168.0
+offset_bottom = 160.0
 texture_normal = ExtResource("3")
 texture_pressed = ExtResource("3")
 texture_hover = ExtResource("2")
 
 [node name="GradeLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 8.0
 offset_right = 148.0
@@ -39,6 +52,7 @@ text = "grade:"
 vertical_alignment = 1
 
 [node name="GradeNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 8.0
 offset_right = 224.0
@@ -49,6 +63,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 24.0
 offset_right = 148.0
@@ -59,6 +74,7 @@ text = "final score: "
 vertical_alignment = 1
 
 [node name="ScoreNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 24.0
 offset_right = 224.0
@@ -69,6 +85,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="ComboLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 40.0
 offset_right = 148.0
@@ -79,6 +96,7 @@ text = "max combo:"
 vertical_alignment = 1
 
 [node name="ComboNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 40.0
 offset_right = 224.0
@@ -89,6 +107,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="GreatLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 56.0
 offset_right = 148.0
@@ -99,6 +118,7 @@ text = "great:"
 vertical_alignment = 1
 
 [node name="GreatNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 56.0
 offset_right = 224.0
@@ -109,6 +129,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="GoodLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 72.0
 offset_right = 148.0
@@ -119,6 +140,7 @@ text = "good:"
 vertical_alignment = 1
 
 [node name="GoodNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 72.0
 offset_right = 224.0
@@ -129,6 +151,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="OkayLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 88.0
 offset_right = 148.0
@@ -139,6 +162,7 @@ text = "okay:"
 vertical_alignment = 1
 
 [node name="OkayNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 88.0
 offset_right = 224.0
@@ -149,6 +173,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="MissedLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 84.0
 offset_top = 104.0
 offset_right = 148.0
@@ -159,6 +184,7 @@ text = "missed:"
 vertical_alignment = 1
 
 [node name="MissedNumber" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 offset_left = 160.0
 offset_top = 104.0
 offset_right = 224.0

@@ -1,9 +1,6 @@
 res://default_env.tres
-res://Scenes/Game.tscn
-res://Frames/arrow_up_frames.tres
-res://Frames/arrow_left_frames.tres
-res://Frames/arrow_right_frames.tres
 res://Scenes/Menu.tscn
+res://Scenes/Game.tscn
 res://Scenes/End.tscn
 res://Scenes/ArrowButton.tscn
 res://Scenes/Brazil.tscn
