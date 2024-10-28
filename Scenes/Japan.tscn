@@ -22,18 +22,18 @@ texture = ExtResource("2_iof0l")
 
 [node name="ArrowUp" parent="." instance=ExtResource("3_w1yhf")]
 modulate = Color(0.8, 0.439216, 0.203922, 1)
-position = Vector2(160, 164)
+position = Vector2(120, 120)
 input = "up"
 
 [node name="ArrowLeft" parent="." instance=ExtResource("3_w1yhf")]
 modulate = Color(0.8, 0.439216, 0.203922, 1)
-position = Vector2(120, 164)
+position = Vector2(120, 80)
 sprite_frames = ExtResource("4_5qlqw")
 input = "left"
 
 [node name="ArrowButton" parent="." instance=ExtResource("3_w1yhf")]
 modulate = Color(0.800366, 0.439622, 0.204783, 1)
-position = Vector2(200, 164)
+position = Vector2(120, 160)
 sprite_frames = ExtResource("5_bry0p")
 input = "right"
 

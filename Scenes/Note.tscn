@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Note.gd" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(8, 8)
+size = Vector2(24, 24)
 
 [node name="Note" type="Area2D" groups=["note"]]
 script = ExtResource("4")

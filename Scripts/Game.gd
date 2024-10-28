@@ -16,10 +16,10 @@ var song_position_in_beats = 0
 var last_spawned_beat = 0
 var sec_per_beat = 60.0 / bpm
 
-var spawn_1_beat = 0
-var spawn_2_beat = 0
+var spawn_1_beat = 1
+var spawn_2_beat = 1
 var spawn_3_beat = 1
-var spawn_4_beat = 0
+var spawn_4_beat = 1
 
 var lane = 0
 var rand = 0
