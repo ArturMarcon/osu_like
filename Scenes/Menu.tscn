@@ -1,18 +1,14 @@
-[gd_scene load_steps=16 format=3 uid="uid://ig6kbcko36c2"]
+[gd_scene load_steps=12 format=3 uid="uid://ig6kbcko36c2"]
 
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://eid2dsjug1p" path="res://Sprites/map.png" id="2_t4phs"]
 [ext_resource type="Texture2D" uid="uid://bjwfhtv5wx2pp" path="res://Sprites/Screenshot_1 (2).png" id="3_cjjvw"]
-[ext_resource type="FontFile" path="res://Fonts/heartbit2x.tres" id="4"]
 [ext_resource type="Texture2D" uid="uid://deykstn2oy8pd" path="res://Sprites/Brazilflag_with_bgc.png" id="4_kteyp"]
 [ext_resource type="Texture2D" uid="uid://cn3lhk44ygqan" path="res://Sprites/ui/slider.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://qm85dwee4la8" path="res://Sprites/Japan.png" id="5_orkxe"]
 [ext_resource type="Texture2D" uid="uid://1q2iq6bpjaui" path="res://Sprites/ui/slider_content.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://cl0cg0xmwg2el" path="res://Sprites/ui/slider_arrow2.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://fhp1a641gje1" path="res://Sprites/ui/slider_arrow1.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://b1nqae3bd6qbt" path="res://Sprites/ui/test_button/test_button1.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://o6f6py8d8375" path="res://Sprites/ui/test_button/test_button2.png" id="10"]
-[ext_resource type="AudioStream" uid="uid://d1hw0eo4djl2t" path="res://Sounds/bell_ding.ogg" id="11"]
 
 [sub_resource type="StyleBoxTexture" id="1"]
 texture = ExtResource("5")
@@ -61,10 +57,11 @@ texture_pressed = ExtResource("5_orkxe")
 texture_hover = ExtResource("5_orkxe")
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_left = 51.0
-offset_top = 154.0
-offset_right = 107.0
-offset_bottom = 170.0
+modulate = Color(5.77569e-07, 0.756645, 0.185102, 1)
+offset_left = 11.0
+offset_top = 151.0
+offset_right = 67.0
+offset_bottom = 167.0
 theme_override_icons/grabber = ExtResource("8")
 theme_override_icons/grabber_highlight = ExtResource("7")
 theme_override_styles/slider = SubResource("1")
@@ -74,43 +71,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="."]
-offset_left = 10.0
-offset_top = 154.0
-offset_right = 50.0
-offset_bottom = 168.0
-theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
-theme_override_fonts/font = ExtResource("4")
-text = "sound"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 133.0
-offset_top = 163.0
-offset_right = 269.0
-offset_bottom = 177.0
-theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
-theme_override_fonts/font = ExtResource("4")
-text = "controls: arrows/wasd"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureButton" type="TextureButton" parent="."]
-modulate = Color(0.329412, 0.960784, 0.215686, 1)
-offset_left = 8.0
-offset_top = 176.0
-offset_right = 56.0
-offset_bottom = 194.0
-texture_normal = ExtResource("9")
-texture_pressed = ExtResource("9")
-texture_hover = ExtResource("10")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TextureButton"]
-stream = ExtResource("11")
-
 [connection signal="button_down" from="Start_Button" to="." method="_on_Start_Button_button_down"]
 [connection signal="button_down" from="Brazil" to="." method="_on_brazil_button_down"]
 [connection signal="button_down" from="Japan" to="." method="_on_japan_button_down"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -3,12 +3,6 @@ res://Scenes/Menu.tscn
 res://Scenes/Game.tscn
 res://Scenes/End.tscn
 res://Scenes/ArrowButton.tscn
-res://Scenes/Global.tscn
 res://Scenes/Brazil.tscn
 res://Scenes/Japan.tscn
-res://Scenes/Conductor.tscn
-res://Scripts/Conductor.gd
-res://Scripts/Game.gd
-res://Plugins/Scripts/SimpleTopDownMovement.gd
-res://Scripts/Note.gd
 res://Scenes/Note.tscn
