@@ -1,30 +1,27 @@
 extends Area2D
 
-const TARGET_Y = 164
-const SPAWN_Y = -16
-const DIST_TO_TARGET = TARGET_Y - SPAWN_Y
+const TARGET_X = -16  # Target position on the left
+const SPAWN_X = 320   # Spawn position on the right (adjust as necessary)
+const DIST_TO_TARGET = TARGET_X - SPAWN_X
 
-const LEFT_LANE_SPAWN = Vector2(120, SPAWN_Y)
-const CENTRE_LANE_SPAWN = Vector2(160, SPAWN_Y)
-const RIGHT_LANE_SPAWN = Vector2(200, SPAWN_Y)
+const LEFT_LANE_SPAWN = Vector2(SPAWN_X, 80)
+const CENTRE_LANE_SPAWN = Vector2(SPAWN_X, 120)
+const RIGHT_LANE_SPAWN = Vector2(SPAWN_X, 160)
 
 var speed = 0
 var hit = false
 
-
 func _ready():
 	pass
 
-
 func _physics_process(delta):
 	if !hit:
-		position.y += speed * delta
-		if position.y > 200:
+		position.x += speed * delta  # Move right to left (decrease x)
+		if position.x < TARGET_X:  # Check if it has moved off-screen
 			queue_free()
 			get_parent().reset_combo()
 	else:
-		$Node2D.position.y -= speed * delta
-
+		$Node2D.position.y -= speed * delta  # Adjust if you want to move down after hit
 
 func initialize(lane):
 	if lane == 0:
@@ -40,8 +37,7 @@ func initialize(lane):
 		printerr("Invalid lane set for note: " + str(lane))
 		return
 	
-	speed = DIST_TO_TARGET / 2.0
-
+	speed = DIST_TO_TARGET / 2.0  # Set speed for how fast it moves
 
 func destroy(score):
 	$CPUParticles2D.emitting = true
@@ -57,7 +53,6 @@ func destroy(score):
 	elif score == 1:
 		$Node2D/Label.text = "OKAY"
 		$Node2D/Label.modulate = Color("997577")
-
 
 func _on_Timer_timeout():
 	queue_free()

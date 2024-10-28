@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dhlvfq4ysni50" path="res://Scenes/ArrowButton.tscn" id="1"]
 [ext_resource type="SpriteFrames" uid="uid://c3stkaf1xuvv6" path="res://Frames/arrow_left_frames.tres" id="2"]
-[ext_resource type="Texture2D" uid="uid://b2gqjclir8ifs" path="res://Sprites/Imagem do WhatsApp de 2024-10-27 à(s) 00.35.13_bdbc3d38.jpg" id="2_lxkm7"]
+[ext_resource type="Texture2D" uid="uid://bbt4pplvirnyn" path="res://Sprites/Screenshot_2.png" id="2_70guh"]
 [ext_resource type="SpriteFrames" uid="uid://cwegoexqgd483" path="res://Frames/arrow_right_frames.tres" id="3"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="6"]
 [ext_resource type="SpriteFrames" uid="uid://bpp5uxa3go0pc" path="res://Frames/shaman.tres" id="6_rvko7"]
@@ -15,25 +15,25 @@
 [node name="Game" type="Node2D"]
 script = ExtResource("6")
 
-[node name="ImagemDoWhatsAppDe2024-10-27À(s)00_35_13Bdbc3d38" type="Sprite2D" parent="."]
-position = Vector2(170.5, 100)
-scale = Vector2(0.5456, 0.317308)
-texture = ExtResource("2_lxkm7")
+[node name="Screenshot2" type="Sprite2D" parent="."]
+position = Vector2(170.5, 100.5)
+scale = Vector2(0.534056, 0.472093)
+texture = ExtResource("2_70guh")
 
 [node name="ArrowUp" parent="." instance=ExtResource("1")]
 modulate = Color(0, 0.627451, 0.631373, 1)
-position = Vector2(160, 164)
+position = Vector2(120, 120)
 input = "up"
 
 [node name="ArrowLeft" parent="." instance=ExtResource("1")]
 modulate = Color(0, 0.628369, 0.632215, 1)
-position = Vector2(120, 164)
+position = Vector2(120, 80)
 sprite_frames = ExtResource("2")
 input = "left"
 
 [node name="ArrowButton" parent="." instance=ExtResource("1")]
 modulate = Color(0, 0.627451, 0.631373, 1)
-position = Vector2(200, 164)
+position = Vector2(120, 160)
 sprite_frames = ExtResource("3")
 input = "right"
 
@@ -70,6 +70,6 @@ volume_db = -15.0
 bpm = 115
 
 [node name="Viking" type="Sprite2D" parent="."]
-position = Vector2(265, 52)
+position = Vector2(289, 128)
 scale = Vector2(0.095, 0.095)
 texture = ExtResource("12_h0pyc")

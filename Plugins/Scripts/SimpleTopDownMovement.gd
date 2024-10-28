@@ -24,4 +24,4 @@ func _process_input():
 		move_direction.x -= 1
 	if Input.is_action_pressed("right"):
 		move_direction.x += 1
-	move_direction = move_direction.normalized()
+	move_direction.x -= 1

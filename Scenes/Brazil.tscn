@@ -23,23 +23,23 @@ texture = ExtResource("2_mmv8e")
 
 [node name="ArrowUp" parent="." instance=ExtResource("3_bme73")]
 modulate = Color(0, 0.627451, 0.631373, 1)
-position = Vector2(160, 164)
+position = Vector2(120, 120)
 input = "up"
 
 [node name="ArrowLeft" parent="." instance=ExtResource("3_bme73")]
 modulate = Color(0, 0.628369, 0.632215, 1)
-position = Vector2(120, 164)
+position = Vector2(120, 80)
 sprite_frames = ExtResource("4_xrr2r")
 input = "left"
 
 [node name="ArrowButton" parent="." instance=ExtResource("3_bme73")]
 modulate = Color(0, 0.627451, 0.631373, 1)
-position = Vector2(200, 164)
+position = Vector2(120, 160)
 sprite_frames = ExtResource("5_8ounb")
 input = "right"
 
 [node name="Shaman" parent="." instance=ExtResource("3_bme73")]
-position = Vector2(61, 125)
+position = Vector2(37, 112)
 scale = Vector2(0.12, 0.12)
 sprite_frames = ExtResource("6_unciq")
 script = ExtResource("7_wd21h")
@@ -71,6 +71,6 @@ volume_db = -15.0
 bpm = 115
 
 [node name="Viking" type="Sprite2D" parent="."]
-position = Vector2(277, 130)
+position = Vector2(293, 111)
 scale = Vector2(0.095, 0.095)
 texture = ExtResource("11_rarl0")
